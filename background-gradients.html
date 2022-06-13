@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        header {
+            height: 100vh; /*kullanıcının grdüğü yüksekliğin 100% ü */
+            width:100vw; /* kullanıcının gördüğü genişliğin %100 ü*/  /* altta yükseklik genişlik verdiğmizen bu değerler devre dışı */
+            background-image:url(background.jpg);
+            background-position: center;
+            background-size:cover; /* arka planın boyutunu ve cover da booyuta göre çözünürlük ve en/boy ayarlar */
+            background-repeat: no-repeat;
+            background-position: bottom;
+
+        }
+        h1 {
+            margin: 0px;
+            text-align: center;
+            display: inline-block;
+            width: 300px;
+            height: 50px;
+            position: absolute;
+            color: gray;
+            font-style: italic;
+            font-weight: 100;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%); /*normalde %50 diyince yazının ilk harfini esas alıyor bu kod ile tam ortalama yapılır */
+              background-image:linear-gradient(to left bottom,rgb(122, 122, 122),rgb(255, 0, 0)); 
+           /* background-image:linear-gradient(to bottom,rgb(246, 238, 9),rgb(93, 4, 4)); */
+           /* background-image:linear-gradient(to top,rgb(246, 238, 9),rgb(93, 4, 4)); */
+            /*background-image:linear-gradient(to right,rgb(246, 238, 9),rgb(93, 4, 4));*/
+              /* background-image:linear-gradient(to left,rgb(246, 238, 9),rgb(93, 4, 4)); */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Background images</h1>
+    </header>
+    
+</body>
+</html>
